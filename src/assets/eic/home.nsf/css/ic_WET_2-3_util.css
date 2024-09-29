@@ -1,0 +1,1053 @@
+@charset "utf-8";
+/*Clean and sorted*/
+/* ICGCWEB-492 - Invisible/visible content based on domain */
+.icweb, .stratpre1, .icgcca {display: none;}
+/* ICGCWEB-487 - Letter Spacing */
+.letterSpace1 {letter-spacing: .1em !important;}
+.letterSpace2 {letter-spacing: .2em !important;}
+.letterSpace3 {letter-spacing: .3em !important;}
+.letterSpace4 {letter-spacing: .4em !important;}
+.letterSpace5 {letter-spacing: .5em !important;}
+.letterSpace6 {letter-spacing: .6em !important;}
+.letterSpace7 {letter-spacing: .7em !important;}
+.letterSpace8 {letter-spacing: .8em !important;}
+.letterSpace9 {letter-spacing: .9em !important;}
+.letterSpace10 {letter-spacing: 1em !important;}
+/* ICGCWEB-472 - Horizontally center block elements */
+.elementCenter {margin-left: auto !important; margin-right: auto !important;}
+/* Numbers and bullets in IE7 don't appear unless this is defined. Isn't harmful to other browsers */
+ol.elementCenter, ul.elementCenter {padding-left: 30px;}
+/* These can be used as either block or inline. Force block */
+del.elementCenter, ins.elementCenter, button.elementCenter, hr.elementCenter {display: block;}
+/* ICGCWEB-439 - Show/hide empty table cells */
+.show-empty-cells {empty-cells: show !important; border-collapse: separate !important;}
+.hide-empty-cells {empty-cells: hide !important; border-collapse: separate !important;}
+/* ICGCWEB-439 - IE7 */
+*:first-child+html .hide-empty-cells {border-collapse: collapse !important;}
+*:first-child+html .hide-empty-cells td {position: relative;}
+*:first-child+html .show-empty-cells {border-collapse: collapse !important;}
+*:first-child+html .show-empty-cells td {position: relative;}
+/* CSE HTML data */
+.g-invisible {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important; margin: 0 !important;}
+/* EPI-8432 - Fixes PIE rounded corners (same as the non-prefixed, but without !important) */
+.eut-background-light {background-color:#EEE; color:#000;}
+.eut-background-dark {background-color:#555; color:#FFF;}
+.eut-background-accent {background-color:#00556B; color:#FFF;}
+/* EPI-8226 */
+.eic-subtitle {font-size: 155%; font-style: normal; font-weight: 400;}
+/* ICGCWEB-280 */
+.ic-hide {display: none !important;}
+/* EPI-7888 */
+.prevNext {white-space: nowrap;}
+/* Fluid Survey */
+.fs-accept  {color: #FFF !important;}
+.fs-popup-overlay {z-index: 100001 !important;}
+.fs-popup {z-index: 100002 !important;}
+/* IPPOTH-1147 */
+ul.noBullet, ol.noBullet { list-style-type: none;}
+ul.disc { list-style-type: disc;}
+ul.square {list-style-type: square;}
+ul.circle {list-style-type: circle;}
+ol.lower-alpha {list-style-type: lower-alpha;}
+ol.upper-alpha {list-style-type: upper-alpha;}
+ol.lower-roman {list-style-type: lower-roman;}
+ol.upper-roman {list-style-type: upper-roman;}
+@media screen { /* ICGCWEB-474 */
+.showprint {display: none !important;}
+}
+@media print {
+.noprint, /* EPI-8613 */
+.pdfBox {display: none !important;} /* EPI-9719 */
+*:first-child+html caption.cn-invisible {display: none !important;} /* ICGCWEB-466 */
+ul.noBullet, ol.noBullet { list-style-type: none;}
+ul.noBulletnoIndent, ol.noBulletnoIndent {list-style-type: none; margin: 0px; padding: 0px;}
+}
+/* Styles for left-nav, non-linked h3s (for custom sites) */
+.cn-left-col-default h3, .cn-left-col-default h4 {background-color: #DDD; color: #333; font-weight: 700; padding: 2px 4px;}
+/* Get rid of the 20px margin between centre col and right col */
+#cn-right-col h1, #cn-right-col h2, #cn-right-col h3, #cn-right-col h4, #cn-right-col h5, #cn-right-col h6, #cn-right-col p, #cn-right-col blockquote, #cn-right-col table, #cn-right-col form, #cn-right-col img, #cn-right-col pre {margin-left: 0;}
+/* Remove margins applied by the grids */
+.wet-boew-tabbed-interface ul.tabs {margin:0;}
+/* Default radius for the WET rounded corners */
+.rounded {border-radius: 5px;}
+/* Left-align h1s with all the other elements */
+.span-4 h1, .span-6 h1, .span-12 h1 {margin-left: 0; margin-right: 0;}
+/* EPIC row-start, row-end */
+.eic-row-start {margin-left: 0 !important;}
+.eic-row-end {margin-right: 0  !important;}
+/***Inclusion of WET_2-2_util.css for TBS CLF2 Theme begins ***/
+/* TBS CLF2 grids */
+.box {border: 1px solid #000;}
+div.boxmultirow {border: 1px solid #000; margin:1px;}
+div.row {margin: 0; padding: 0; width: 98.5%; overflow: hidden;} 
+div.cols2 {float: left; width: 49%; margin: 0 3px 0 0; padding: 0;}
+div.cols3 {float: left; width: 32%; margin: 0 3px 0 0; padding: 0;}
+/* Generic utility CSS */
+.fontsize200, .fontSize200 {font-size: 200% !important;}
+.fontsize195, .fontSize195 {font-size: 195% !important;}
+.fontsize190, .fontSize190 {font-size: 190% !important;}
+.fontsize185, .fontSize185 {font-size: 185% !important;}
+.fontsize180, .fontSize180 {font-size: 180% !important;}
+.fontsize175, .fontSize175 {font-size: 175% !important;}
+.fontsize170, .fontSize170 {font-size: 170% !important;}
+.fontsize165, .fontSize165 {font-size: 165% !important;}
+.h1size, .fontsize160, .h1Size, .fontSize160 {font-size: 160% !important;}
+.fontsize155, .fontSize155 {font-size: 155%;}
+.h2size, .fontsize150, .h2Size, .fontSize150 {font-size: 150% !important;}
+.fontsize145, .fontSize145 {font-size: 145% !important;}
+.h3size, .fontsize140, .big, .h3Size, .fontSize140 {font-size: 140% !important;}
+.fontsize135, .fontSize135 {font-size: 135% !important;}
+.h4size, .fontsize130, .h4Size, .fontSize130 {font-size: 130% !important;}
+.fontsize125, .fontSize125 {font-size: 125% !important;}
+.h5size, .fontsize120, .h5Size, .fontSize120 {font-size: 120% !important;}
+.fontsize115, .fontSize115  {font-size: 115% !important;}
+.h6size, .fontsize110, .h6Size, .fontSize110, .headline {font-size: 110% !important;}
+.fontsize105, .fontSize105 {font-size: 105% !important;}
+.fontsize100, .fontSize100 {font-size: 100% !important;}
+.fontsize95, .fontSize95 {font-size: 95% !important;}
+.fontsize90, .fontSize90 {font-size: 90% !important;}
+.mediumfont, .fontsize85, .mediumFont, .fontSize85 {font-size: 85% !important;}
+.fontsize80, .fontSize80 {font-size: 80% !important;}
+.smallfont, .fontsize75, .smallFont, .fontSize75 {font-size: 75% !important;}
+.fontsize70, .fontSize70 {font-size: 70% !important;}
+.fontSizeDefault {font-size: 12.8px !important;}
+/* Deprecated - Use .cn-invisible instead */
+.navaid {height: 1px; width: 1px; overflow: hidden; float: right; font-size: 0; position: absolute; top:auto; left: -10000px;}
+.navaid a {color: #FFF;}
+table.widthfull, table.widthFull  {width:100% !important;}
+.widthfull, .widthFull {width: 99.8% !important;}
+.width95 {width: 95% !important;}
+.width90 {width: 90% !important;}
+.width85 {width: 85% !important;}
+.width80 {width: 80% !important;}
+.width75 {width: 75% !important;}
+.width70 {width: 70% !important;}
+.width65 {width: 65% !important;}
+.width60 {width: 60% !important;}
+.width55 {width: 55% !important;}
+.width50 {width: 50% !important;}
+.width45 {width: 45% !important;}
+.width40 {width: 40% !important;}
+.width35 {width: 35% !important;}
+.width30 {width: 30% !important;}
+.width25 {width: 25% !important;}
+.width20 {width: 20% !important;}
+.width15 {width: 15% !important;}
+.width10 {width: 10% !important;}
+.width5 {width: 5% !important;}
+div.gcinits {float: left; padding-bottom: 5px;}
+div.gcinit div {width: 191px; height: 5.16em; border: 1px solid #000;}
+div.gcinit a, div.gcinit a:visited {width: 100%; height: 100%; float: left; text-decoration: none;}
+/* Alignment utility CSS */
+/* ICGCWEB-440 - Added !important to existing single-use classes */
+.alignRight {text-align: right !important;}
+.alignCenter {text-align: center !important;}
+.alignLeft {text-align: left !important;}
+.alignTop {vertical-align: top !important;}
+.alignBottom {vertical-align: bottom !important;}
+.align-topright, .alignTopRight {text-align: right !important; vertical-align: top !important;}
+.align-topcenter, .alignTopCenter {text-align: center !important; vertical-align: top !important;}
+.align-topleft, .alignTopLeft {text-align: left !important; vertical-align: top !important;}
+.align-bottomright, .alignBottomRight {text-align: right !important; vertical-align: bottom !important;}
+.align-bottomcenter, .alignBottomCenter {text-align: center !important; vertical-align: bottom !important;}
+.align-bottomleft, .alignBottomLeft {text-align: left !important; vertical-align: bottom !important;}
+.floatRight {float: right !important;}
+.floatLeft {float: left !important;}
+.image-left {float: left; vertical-align: text-top;}
+.image-right {float: right; vertical-align: text-top; margin-left: 10px;}
+.indent1 {padding-left: 18px !important;}
+.indent2 {padding-left: 36px !important;}
+.indent3 {padding-left: 54px !important;}
+.indent4 {padding-left: 72px !important;}
+.indent5 {padding-left: 90px !important;}
+/* EPI-7711 */
+ul.nobullet > li, ul.noBullet > li {list-style-type: none;}
+ul.disc > li {list-style-type: disc;}
+ul.square > li {list-style-type: square;}
+ul.circle > li {list-style-type: circle;}
+ol.lower-alpha > li {list-style-type: lower-alpha;}
+ol.upper-alpha > li {list-style-type: upper-alpha;}
+ol.lower-roman > li {list-style-type: lower-roman;}
+ol.upper-roman > li {list-style-type: upper-roman;}
+/* Text utility CSS */
+.nowrap, .noWrap {white-space: nowrap;}
+.doublelinespace, .doubleLineSpace {line-height: 200%;}
+.uppercase {text-transform: uppercase;}
+.lowercase {text-transform: lowercase;}
+.color-black, .black {color: #000; background-color: transparent;}
+.color-white, .white {color: #FFF; background-color: transparent;}
+.color-red, .red {color: #C00; background-color: transparent;}
+.color-blue, .blue {color: #00F; background-color: transparent;}
+.color-green, .green {color: #093; background-color: transparent;}
+.color-grey, .grey {color: #999; background-color: transparent;}
+.color-deepyellow, .deepyellow {color: #FC3; background-color: transparent;}
+.bg-black, .blackBG {background-color: #000; color: #FFF;}
+.bg-white, .whiteBG {background-color: #FFF;}
+.bg-red, .redBG {background-color: #C00; color: #FFF;}
+.bg-blue, .blueBG {background-color: #00F; color: #FFF;}
+.bg-green, .greenBG {background-color: #093;}
+.bg-lightgrey, .lightgreyBG {background-color: #CCC;}
+.bg-deepyellow, .deepyellowBG {background-color: #FC3;}
+.highlight {border: 1px solid #030; background-color: #9F9; padding: 5px;}
+.wrapcontainer, .wrapContainer {float: left; width: 100%;}
+/* ICGCWEB-337 */
+.bg-black a[href], .blackBG a[href],
+.bg-red a[href], .redBG a[href],
+.bg-blue a[href], .blueBG a[href] {color: #FFF !important;}
+.bg-green a[href], .greenBG a[href] {color: #000 !important;}
+/* Background colors -- IC?*/
+.bg999999{background-color: #999;} 
+.bgcccccc {background-color: #CCC;} 
+.bgcc6666 {background-color: #C66;} 
+.bgccccff {background-color: #CCF;} 
+.bgccffcc {background-color: #CFC;} 
+.bgccffff {background-color: #CFF;} 
+.bgffffff {background-color: #FFF;} 
+.bgffff99 {background-color: #FF9;} 
+.bgffffcc{background-color: #FFC;} 
+.bgffcccc {background-color: #FCC;} 
+.bgffccff {background-color: #FCF;} 
+.bgffcc66 {background-color: #FC6;} 
+.bgwhite{background-color: #FFF;}
+/*** Inclusion of WET_2-2_util.css  for TBS CLF2 Theme  ends */
+/* ADD APPS - EPI-7617 -changed EPI-7887 */
+.mandatory{ background-color: transparent; color: #C30307; font-weight: bold; }
+/* Mandatory field */
+.redCol {font-family: Arial, Helvetica, sans-serif; color: #FF0000; width: 2%;}
+.redText {font-family: Arial, Helvetica, sans-serif; color: #C00;}
+/* EPIC-generated tools */
+div.epicrowtop {margin: 0; padding: 1px; overflow: auto; font-weight: bold; float: left;}
+div.epicrowall {margin: 0px;  padding: 0; overflow: auto; float: left;}
+.epiccol1, .epiccol2, .epiccol3, .epiccol4, .epiccol5 {float: left;  margin: 0px; padding: 0px 1px 0px 1px; overflow: auto;}
+.epiccolcat {float: left; margin: 0px; padding: 1px; color: #000; font-weight: bold;}
+.epiccolcat2 {float: left; margin: 0px; padding: 1px 1px 1px 19px; color: #666; font-weight: bold;}
+.epicexpcat {float: left; margin: 0px; padding: 10px 0px 10px 0px;}
+.epiccatlnk{font-size: 8pt; text-decoration: none;}
+.epicrated{display: block; font-size:60%; font-weight: normal; color:#666;}
+div#epicDesignAd {padding: 6px 0px 5px 0px; background-color: #FFF; color: #000; font-size: 80%; text-decoration: none; margin:0;}
+div#epicDesignAd img {padding: 0; margin: 0;}
+div#epicDesignAd a {display: block; width:146px; color: #000; text-decoration: none; padding: 0; margin:0; border:1px solid #FFF;}
+span.adDown {display: block; background-color: #FFF; padding: 6px 0 0 0; margin: 0;}
+/* EPIC-Custom annotation */
+div.epicrownav p {margin: 0; padding: 1px; font-size: 100%; font-weight: bold;} 
+div.epicrownav ul {font-weight: bold; list-style-type: none; margin: 0px; padding: 0px;} 
+div.epicrownav li {padding: 1px;} 
+div.epicrownav li ul {list-style-type: none; background-color: #FFF; float: none; color: #666; font-weight: bold; margin: 0; padding: 1px 1px 1px 19px;} 
+div.epicrownav li ul li {border: 0;}
+/* EPIC-Calendar */
+#cn-body-inner-3col #cn-right-col table.eiccal {width: 230px;}
+#cn-body-inner-2col #cn-centre-col-inner table.eiccal {margin-top: 5px;}
+table.eiccal td, table.eiccal th {padding:4px; margin:0;}
+#cn-body-inner-1col #cn-centre-col-inner table.eiccal caption, #cn-body-inner-2col #cn-centre-col-inner table.eiccal caption, #cn-body-inner-3col #cn-centre-col-inner table.eiccal caption, #cn-body-inner-3col #cn-right-col table.eiccal caption {    text-align: center;}
+/* EPIC-Send to a friend page */
+div.sendText { border-bottom: 1px solid #666; border-top: 1px solid #666; padding:0; margin:0; margin-right: 6px; color: #666; text-decoration: none; font-family: verdana, arial, Helvetica, sans-serif; font-size: 8pt; font-weight:normal;}
+div.sendText a:link, div.sendText a:hover,div.sendText a:visited  { padding:0; color: #666; text-decoration: none; font-family: verdana, arial, Helvetica, sans-serif; font-size: 8pt; font-weight:normal;}
+/* EPIC-Rate this article results */
+div.rateBox{overflow:hidden;}
+span.rateText {border-bottom: 1px solid #666; border-top: 1px solid #666; padding:0px; color: #666; text-decoration: none; font-family: verdana, arial, Helvetica, sans-serif; font-size: 8pt; font-weight:normal;}
+.rateNumBox{margin:-3px; margin-top:0; padding:0; font-family: verdana, arial, Helvetica, sans-serif; font-size: 10pt; font-weight:normal; border-bottom:1px solid #666;}
+.rateStar{margin-top: 10px;}
+.fiveStar{margin-right: 6px;}
+.clearRate{display: block; clear:right; margin:0; padding:0;}
+/* EPIC-Default quick search */
+.leftnavform {margin:0; padding:8px 3px 8px 4px;  background-color:#369;}
+.inputedt {font-size: 90%; font-family: Verdana, Arial, Helvetica, sans-serif; padding:0; margin:0;}
+.inputedt2 {font-size:70%; font-family: Verdana, Arial, Helvetica, sans-serif; padding:0; margin: 0px 0 0 4px;}
+.hidefieldset {border:0;  padding:0; margin:0; display: block;}
+/* EPIC-ITB Tools */
+#icitb { position:relative; margin-bottom: 12px; min-height: 200px;}
+.jsIcItBox { position: absolute; top:18px;  right: 1px; z-index: 1000;}
+.HiddenElement, .hiddenElement { display: none;}
+a.help { cursor: help;}
+p.boxtest { -moz-border-radius: 1em; border-radius:1em; border: 1px solid #CCC; background-color:#EEF; padding:10px; margin:20px;}
+/* EPIC-ITB bar */
+.no-js #icitBar {display: block;}
+#icitBar {display: none;}
+#icitBar {height: 22px; font-family:Verdana,Arial,Helvetica,sans-serif; font-size: 0.75em; font-weight: normal; overflow: hidden; position:relative;  width: 99.8%;}
+#icitBar ul {float: right; margin: 0 10px 0 0; list-style:none; list-style-position:inside;}
+#icitBar li {float: left; margin: 0 0 0 10px;}
+#icitBar li a:link, #icitBar li a:visited {display:block; text-decoration: none; cursor: pointer; color: #666; background-repeat: no-repeat;}
+#icitBar  a:hover, #itbBar  a:focus {text-decoration: underline;}
+#icitBar .printButton a {background-image: url(/eic/home.nsf/images/smt_print.gif/$file/smt_print.gif); background-position: left 1px; padding-left: 17px;}
+#icitBar .emailButton a {background-image: url(/eic/home.nsf/images/smt_email.gif/$file/smt_email.gif); background-position: left 1px; padding-left: 19px;}
+#icitBar .rateButton a, #icitBar .rateButton a:link, #icitBar .rateButton a:visited {background-image: url(/eic/home.nsf/images/smt_Rate.gif/$file/smt_Rate.gif); background-position: left 1px; padding-left: 13px;}
+#icitBar .rssButton a, #icitBar .Icons-RsseButton a:link, #icitBar .rssButton a:visited {background-image: url(/eic/home.nsf/images/smt_rss.gif/$file/smt_rss.gif); background-position: left 1px; padding-left: 13px;}
+#icitBar .shareButton a, #icitBar .shareButton a:link, #icitBar .shareButton a:visited {background-image: url(/eic/home.nsf/images/smt_share.gif/$file/smt_share.gif); background-position: left 1px; padding-left: 13px;}
+/* EPIC-ICITWrapper Starts */
+div.icitw {  overflow: hidden;  width: 100%;}
+/* EPIC-ITB Boxes */
+.no-js #RateContainer, .no-js #RssContainer, .no-js #ShareContainer {display: block;}
+#EmailContainer, #RateContainer, #RssContainer, #ShareContainer {display: none;}
+.icitBox {width:394px; margin-bottom:10px;}
+.icitBoxHeader {background: url() #CCC no-repeat left bottom; border-radius: 5px 5px 0 0; padding-top: 5px; _height: 1%;}
+#RateContainer .icitBoxHeader h2, #RssContainer .icitBoxHeader h2, #ShareContainer .icitBoxHeader h2, #EmailContainer .icitBoxHeader h2 {margin: 0; padding:1px 5px 3px 5px; font-size: 95%; color: #000; min-height:10px;}
+.icitBoxContent {border-left: 1px solid #CCC; border-right: 1px solid #CCC; padding: 0 0 8px 0; background-color: #EEE; font-size: 95%; line-height: 1.3em; _height: 1%;}
+.icitBoxContent p {margin: 0; padding:5px;}
+.icitBoxContent ul {list-style: none; margin: 0; padding: 0; overflow:hidden;}
+.icitBoxContent ul li {float: left;}
+.icitBoxContent ul li a {text-decoration: none; font-size: 90%;}
+.icitBoxContent ul li a:hover, .icitBoxContent ul li a:focus  {text-decoration: underline;}
+div.icitBoxFooter {background:  #CCC; border-radius: 0 0 5px 5px; padding-bottom: 5px; _height: 1%; overflow:hidden;}
+div.icitBoxFooter a {font-size: 85%; float: right; color: #000; padding: 5px 8px 0px 5px; text-decoration: none;}
+div.icitBoxFooter a:link {color: #000;}
+div.icitBoxFooter a:hover {color: #000; text-decoration: underline;}
+div.icitBoxFooter a:visited, div.icitBoxFooter a:hover, div.icitBoxFooter a:focus {color: #000;}
+/* EPIC-Rate tool */
+div.rateRow {overflow: hidden;  padding-bottom: 20px;  position: relative;  width: 100%}
+form#rateForm a {text-decoration: none;}
+div.rateTextcol1 {border-bottom: 1px solid #EEE;  float: left;  text-align: right;  width: 32%;}
+div.rateTextcol2 {border-bottom: 1px solid #EEE;  float: left;  text-align: center;  width: 35%;}
+div.rateTextcol3 {border-bottom:  1px solid #EEE;  float: left;  width: 32%;}
+div.rateLabel {display: block;}
+form#rateForm button {background-color: transparent;  border: none;  bottom: 0;  color: #039;  cursor: pointer;  font-size: 100%;  margin: 0 6px;  padding: 0;  position: absolute;  width: 30px;}
+form#rateForm button img {margin: 0;  padding: 0;}
+form#rateForm button:hover {color:#C00;}
+button.rateButton1 {left: 90px;}
+button.rateButton2 {left: 132px;}
+button.rateButton3 {left: 174px;}
+button.rateButton4 {left: 216px;}
+button.rateButton5 {left: 260px;}
+form#rateForm {font-size: 85%;}
+div.rateInline {display: inline;}
+/* EPIC-RSS tool */
+#RssContainer .icitBoxContent ul {padding: 0 20px 0 5px; min-height: 50px;}
+#RssContainer .icitBoxContent ul li {float:none; list-style: none; text-decoration: none; padding:5px 0 5px 20px; min-width:100px;}
+#RssContainer.icitBoxContent img {padding:0 3px 0 0; float:left;}
+/* EPIC-Share tool */
+#ShareContainer .icitBoxContent ul {padding: 0 20px 0 30px; min-height: 50px;}
+#ShareContainer .icitBoxContent ul li {float: left; list-style: none; text-decoration: none; padding:5px 0 5px 5px; width:30%;}
+#ShareContainer .icitBoxContent img {padding:0 3px 0 0;float:left;}
+/*#EmailContainer .icitBoxContent p, */#EmailContainer .icitBoxContent fieldset {font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 0.92em; margin:10px; padding:10px;}
+.icitMoreBox {margin-bottom:10px;width:90%;display: block !important;}
+/* EPI-8020 - New EPIC-Share tool */
+#ShareContainer .icitBoxContent form {margin: 0;}
+#ShareContainer .icitBoxContent form ul {padding: 0; padding-left: 40px;}
+#ShareContainer .icitBoxContent form li {white-space: nowrap;}
+#ShareContainer .icitBoxContent form img {padding: 0; margin: 0 5px 0 0;}
+#ShareContainer .icitBoxContent form button::-moz-focus-inner {padding: 0; border: 0;}
+/* EPI-8020 */
+#ShareContainer fieldset {border: none; padding: 0;}
+#ShareContainer legend {font-weight: normal; margin: 0; padding-left: 6px; white-space: normal; width: 100%;}
+#ShareContainer span.ie {display: block; width: 100%;}
+#ShareContainer img {margin: 0 10px;}
+#ShareContainer button {background: none; border: none; color: #295376; cursor: pointer; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 90%; margin: 0; padding: 0; text-align: left; width: 100%;}
+#ShareContainer button:hover {color: #C00; text-decoration: underline;}
+/* Font style */
+.italic {font-style:italic;}
+.normal {font-style: normal !important; font-weight: normal !important;}
+.bold{font-weight: bold;}
+/* Footnote */
+p.footnote, ol.footnote {font-size: 85%; color: #000; font-style: normal;}
+/* MARGIN */ 
+.margin0, .cn-right-col-default li a img.margin0 {margin: 0;}
+.margin1 {margin: 1px !important;} 
+.margin2 {margin: 2px !important;} 
+.margin3 {margin: 3px !important;} 
+.margin4 {margin: 4px !important;} 
+.margin5 {margin: 5px !important;} 
+.margin8 {margin: 8px !important;} 
+.margin10 {margin: 10px !important;} 
+.margin12 {margin: 12px !important;} 
+.margin15 {margin: 15px !important;} 
+.margin16 {margin: 16px !important;} 
+.margin20 {margin: 20px !important;} 
+.margin40 {margin: 40px !important;} 
+/*  MARGIN TOP */
+.marginTop0 {margin-top: 0;}
+.marginTop1 {margin-top: 1px;} 
+.marginTop2 {margin-top: 2px;} 
+.marginTop3 {margin-top: 3px;} 
+.marginTop4 {margin-top: 4px;} 
+.marginTop5 {margin-top: 5px;} 
+.marginTop8 {margin-top: 8px;} 
+.marginTop10 {margin-top: 10px;} 
+.marginTop12 {margin-top: 12px;} 
+.marginTop16 {margin-top: 16px;} 
+.marginTop20 {margin-top: 20px;} 
+/*  MARGIN RIGHT */
+.marginRight1 {margin-right: 1px;} 
+.marginRight2 {margin-right: 2px;} 
+.marginRight3 {margin-right: 3px !important;} 
+.marginRight4 {margin-right: 4px !important;} 
+.marginRight5 {margin-right: 5px !important;} 
+.marginRight8 {margin-right: 8px !important;} 
+.marginRight10 {margin-right: 10px !important;} 
+.marginRight12 {margin-right: 12px !important;} 
+.marginRight16 {margin-right: 16px !important;} 
+.marginRight20 {margin-right: 20px !important;} 
+/*  MARGIN BOTTOM */
+.marginBottom1 {margin-bottom: 1px;}
+.marginBottom2 {margin-bottom: 2px;}
+.marginBottom3 {margin-bottom: 3px;}
+.marginBottom4 {margin-bottom: 4px;}
+.marginBottom5 {margin-bottom: 5px;}
+.marginBottom8 {margin-bottom: 8px;}
+.marginBottom10 {margin-bottom: 10px;}
+.marginBottom12 {margin-bottom: 12px;}
+.marginBottom16 {margin-bottom: 16px;}
+.marginBottom20 {margin-bottom: 20px;}
+/*  MARGIN LEFT */
+.marginLeft1 {margin-left: 1px !important;} 
+.marginLeft2 {margin-left: 2px !important;} 
+.marginLeft3 {margin-left: 3px !important;} 
+.marginLeft4 {margin-left: 4px !important;} 
+.marginLeft5 {margin-left: 5px !important;} 
+.marginLeft8 {margin-left: 8px !important;} 
+.marginLeft10 {margin-left: 10px !important;} 
+.marginLeft12 {margin-left: 12px !important;} 
+.marginLeft16 {margin-left: 16px !important;} 
+.marginLeft20 {margin-left: 20px !important;} 
+/* No whitespace */
+.compress {margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom:0;}
+/* PADDING */
+.padding0 {padding: 0 !important;} 
+.padding1 {padding: 1px !important;} 
+.padding2 {padding: 2px !important;} 
+.padding3 {padding: 3px !important;} 
+.padding4 {padding: 4px !important;} 
+.padding5 {padding: 5px !important;} 
+.padding6 {padding: 6px !important;} 
+.padding7 {padding: 7px !important;} 
+.padding8 {padding: 8px !important;} 
+.padding9 {padding: 9px !important;} 
+.padding12 {padding: 12px !important;} 
+.padding16 {padding: 16px !important;} 
+.padding20 {padding: 20px !important;} 
+.padding30 {padding: 30px !important;} 
+.padding40 {padding: 40px !important;} 
+/* PADDING TOP */
+.paddingTop1 {padding-top: 1px;}
+.paddingTop2 {padding-top: 2px;}
+.paddingTop3 {padding-top: 3px;}
+.paddingTop4 {padding-top: 4px;}
+.paddingTop5 {padding-top: 5px;}
+.paddingTop6 {padding-top: 6px;}
+.paddingTop7 {padding-top: 7px;}
+.paddingTop8 {padding-top: 8px;}
+.paddingTop12 {padding-top: 12px;}
+.paddingTop16 {padding-top: 16px;}
+.paddingTop20 {padding-top: 20px;}
+.paddingTop30 {padding-top: 30px;}
+.paddingTop40 {padding-top: 40px;}
+/* PADDING BOTTOM */
+.paddingBottom1 {padding-bottom: 1px;}
+.paddingBottom2 {padding-bottom: 2px;}
+.paddingBottom3 {padding-bottom: 3px;}
+.paddingBottom4 {padding-bottom: 4px;}
+.paddingBottom5 {padding-bottom: 5px;}
+.paddingBottom6 {padding-bottom: 6px;}
+.paddingBottom7 {padding-bottom: 7px;}
+.paddingBottom8 {padding-bottom: 8px;}
+.paddingBottom12 {padding-bottom: 12px;}
+.paddingBottom16 {padding-bottom: 16px;}
+.paddingBottom20 {padding-bottom: 20px;}
+.paddingBottom30 {padding-bottom: 30px;}
+.paddingBottom40 {padding-bottom: 40px;}
+/* PADDING LEFT*/
+.paddingLeft1 {padding-left: 1px !important;} 
+.paddingLeft2 {padding-left: 2px !important;} 
+.paddingLeft3 {padding-left: 3px !important;} 
+.paddingLeft4 {padding-left: 4px !important;} 
+.paddingLeft5 {padding-left: 5px !important;} 
+.paddingLeft6 {padding-left: 6px !important;} 
+.paddingLeft7 {padding-left: 7px !important;} 
+.paddingLeft8 {padding-left: 8px !important;} 
+.paddingLeft12 {padding-left: 12px !important;} 
+.paddingLeft16 {padding-left: 16px !important;} 
+.paddingLeft20 {padding-left: 20px !important;} 
+.paddingLeft30 {padding-left: 30px !important;} 
+.paddingLeft40 {padding-left: 40px !important;} 
+/* PADDING RIGHT */
+.paddingRight1 {padding-right: 1px !important;} 
+.paddingRight2 {padding-right: 2px !important;} 
+.paddingRight3 {padding-right: 3px !important;} 
+.paddingRight4 {padding-right: 4px !important;} 
+.paddingRight5 {padding-right: 5px !important;} 
+.paddingRight6 {padding-right: 6px !important;} 
+.paddingRight7 {padding-right: 7px !important;} 
+.paddingRight8 {padding-right: 8px !important;} 
+.paddingRight12 {padding-right: 12px !important;} 
+.paddingRight16 {padding-right: 16px !important;} 
+.paddingRight20 {padding-right: 20px !important;} 
+.paddingRight30 {padding-right: 30px !important;} 
+.paddingRight40 {padding-right: 40px !important;} 
+/* No borders */
+.borderNone {border: none;}
+/* Borders - ICGCWEB-343 - Note PIE doesn't like !important on borders (GH #222) */
+.boxWhitethin{border: #FFF solid 1px;}
+.boxWhitethick{border: #FFF solid 3px;}
+.boxBlackthin{border: #000 solid 1px;}
+.boxBlackthick{border: #000 solid 3px;}
+.boxIthin{border: #EEE solid 1px;}
+.boxIthick{border: #EEE solid 3px;}
+.boxBthin{border: #369 solid 1px;}
+.boxBthick{border: #369 solid 3px;}
+/* Top border */
+.borderTopBlackthin{border-top: #000 solid 1px !important;}
+.borderTopBlackthick{border-top: #000 solid 3px !important;}
+.borderTopWhitethin{border-top: #FFF solid 1px !important;}
+.borderTopWhitethick{border-top: #FFF solid 3px !important;}
+.borderTopIthin{border-top: #EEE solid 1px !important;}
+.borderTopIthick{border-top: #EEE solid 3px !important;}
+.borderTopBthin{border-top: #369 solid 1px !important;}
+.borderTopBthick{border-top: #369 solid 3px !important;}
+.borderTopNone{border-top: none !important;}
+/* Bottom border */
+.borderBottomBlackthin{border-bottom: #000 solid 1px !important;}
+.borderBottomBlackthick{border-bottom: #000 solid 3px !important;}
+.borderBottomWhitethin{border-bottom: #FFF solid 1px !important;}
+.borderBottomWhitethick{border-bottom: #FFF solid 3px !important;}
+.borderBottomIthin{border-bottom: #EEE solid 1px !important;}
+.borderBottomIthick{border-bottom: #EEE solid 3px !important;}
+.borderBottomBthin{border-bottom: #369 solid 1px !important;}
+.borderBottomBthick{border-bottom: #369 solid 3px !important;}
+.borderBottomNone{border-bottom:none !important;}
+/* Left border */
+.borderLeftBlackthin{border-left: #000 solid 1px !important;}
+.borderLeftBlackthick{border-left: #000 solid 3px !important;}
+.borderLeftWhitethin{border-left: #FFF solid 1px !important;}
+.borderLeftWhitethick{border-left: #FFF solid 3px !important;}
+.borderLeftIthin{border-left: #EEE solid 1px !important;}
+.borderLeftIthick{border-left: #EEE solid 3px !important;}
+.borderLeftBthin{border-left: #369 solid 1px !important;}
+.borderLeftBthick{border-left: #369 solid 3px !important;}
+.borderLeftNone{border-left: none !important;}
+/* Right border */
+.borderRightBlackthin{border-right: #000 solid 1px !important;}
+.borderRightBlackthick{border-right: #000 solid 3px !important;}
+.borderRightWhitethin{border-right: #FFF solid 1px !important;}
+.borderRightWhitethick{border-right: #FFF solid 3px !important;}
+.borderRightIthin{border-right: #EEE solid 1px !important;}
+.borderRightIthick{border-right: #EEE solid 3px !important;}
+.borderRightBthin{border-right: #369 solid 1px !important;}
+.borderRightBthick{border-right: #369 solid 3px !important;}
+.borderRightNone{border-right: none !important;}
+/* No border */
+.noBorder {border-style: none;}
+/* EPI-9944 */
+table.noBorder {border-style: none !important;}
+/* Clear floats */
+.clearBoth {clear: both;}
+.clearLeft {clear: left;}
+.clearRight {clear: right;}
+.clearNone {clear: none;}
+/* IC Grids */
+div.icRow {overflow:hidden; margin: 0; padding: 0; width: 100%;}
+/* 2 column layout */
+div.ic2col1 {float: left; width: 49%; margin: 0 3px 0 0; padding: 0;}
+div.ic2col2 {float: left; width: 49%; margin: 0; padding: 0;}
+/* 3 column layout */
+div.ic3col1 {float: left; width: 33%; margin: 0 3px 0 0; padding: 0;}
+div.ic3col2 {float: left; width: 32%; margin: 0 3px 0 0; padding: 0;}
+div.ic3col3 {float: left; width: 32%; margin: 0; padding: 0;}
+/* 4 column layout */
+div.ic4col1 {float: left; width: 24.5%; margin: 0 3px 0 0; padding: 0;}
+div.ic4col2 {float: left; width: 24%; margin: 0 3px 0 0; padding: 0;}
+div.ic4col3 {float: left; width: 24%; margin: 0 3px 0 0; padding: 0;}
+div.ic4col4 {float: left; width: 24%; margin: 0; padding: 0;}
+/* 5 column layout */
+div.ic5col1 {float: left; width: 19.5%; margin: 0 3px 0 0; padding: 0;}
+div.ic5col2 {float: left; width: 19.5%; margin: 0 3px 0 0; padding: 0;}
+div.ic5col3 {float: left; width: 19%; margin: 0 3px 0 0; padding: 0;}
+div.ic5col4 {float: left; width: 19%; margin: 0 3px 0 0; padding: 0;}
+div.ic5col5 {float: left; width: 19%; margin: 0; padding: 0;}
+/* Image alignment utility */
+img.imgpadr {margin-right: 5px;}
+img.imgpadl {margin-left: 5px;}
+img.imgpadt {margin-top: 5px;}
+img.imgpadb {margin-bottom: 5px;}
+/* EPIC corporate box */
+/*.corpicspace {margin: 0;  height: 5px; background-color: #FFF;}*/
+/*.ifloatleft {padding:0 5px 2px 0; float: left;}*/
+/* IC-CLF2 theme HR */
+hr {background-color: #CCC; color: #CCC; border: 1px solid #CCC;}  
+hr.thin {background-color: #CCC; color: #CCC; border: none; width:100%; }
+/* IC-CLF2 theme Quotes */
+div.blockquote {margin: 0 0 16px 0; padding: 0;}
+p.quoteSource {text-align: right; margin: 0 40px 20px 80px; padding: 0px; }
+/* IC-CLF2 theme Content indicators */
+span.new{font-size: 80%; color: #000; font-weight: bold; background-color: #FC3; padding: 1px 3px 1px 3px;}
+span.updated{font-size: 80%; color: #000; font-weight: bold; background-color: #ACE; padding: 1px 3px 1px 3px;}
+span.archived{font-size: 80%; color: #000; font-weight: bold; background-color: #CCC; padding: 1px 3px 1px 3px;}
+/* IC-CLF2 theme Lined tables */
+.ic-ie-caption {border-radius: 5px 5px 0 0;}
+table.lined {border-spacing: 0px; border-collapse: collapse; border: 1px solid #CCC;}
+.ic-ie-caption, table.lined caption {padding: 6px 3px 6px 3px; font-size: 120%; margin:0px; text-align:left; background: #666; color:#FFF; font-weight:bold; border:1px solid #666; font-family:Arial;}
+table.lined th, table.lined thead td {padding:1px 3px; margin:0px; text-align:left; background-color: #EEE; color:#333; border:1px solid #CCC; border-top:0px;}
+table.lined td {padding:1px 3px; border-bottom:1px solid #CCC; border-right:1px solid #CCC;}
+table.lined tfoot td {border-top:3px #CCC solid; background-color:#EEE; color:#333; padding:3px; margin:0px;}
+/* IC-CLF2 theme Tables - No lines */
+table.unlined { border-spacing:0px; border-collapse:collapse; border:1px solid #ccc; }
+table.unlined caption { padding: 6px 3px 6px 3px; margin:0px; text-align:left; background:#666; color:#FFF; font-weight:bold; border:1px solid #666; font-family:Arial; font-size: 120%; }
+table.unlined th, table.unlined thead td { margin:0px; text-align:left; background-color: #EEE; color:#333; padding:1px 8px; border:0; }
+table.unlined td { padding:1px 8px; border: 0; }
+table.unlined tr.altrow, table.lined tr.altrow { background:#F9F9F9; }
+table.unlined tfoot td { border-top: 3px #CCC solid; background-color:#EEE; color:#333; padding:3px; }
+#cn-centre-col-inner table.lined caption a:link, #cn-centre-col-inner table.unlined caption a:link { color: #FFF; }
+#cn-centre-col-inner table.lined caption a:visited, #cn-centre-col-inner table.unlined caption a:visited { color: #FFF; }
+/* EPI-8532 */
+.unlined3, .unlined3 td, .unlined3 th {border: none; background: none;}
+/* IC- corporate colours */
+/* ICGCWEB-414 */
+/* Dark Blue text with white bg*/
+.icA{color: #666;}
+#cn-centre-col-inner .icA a:link, 
+#cn-centre-col-inner .icA a:visited, 
+#cn-right-col-inner .icA a:link, 
+#cn-right-col-inner .icA a:visited  {color: #036;}
+/* Medium Blue text with white bg */
+.icB{color: #369;}
+#cn-centre-col-inner .icB a:link, 
+#cn-centre-col-inner .icB a:visited, 
+#cn-right-col-inner .icB a:link, 
+#cn-right-col-inner .icB a:visited  {color: #369;}
+/* Red text with white bg */
+.icD{color: #C00;}
+#cn-centre-col-inner .icD a:link, 
+#cn-centre-col-inner .icD a:visited, 
+#cn-right-col-inner .icD a:link, 
+#cn-right-col-inner .icD a:visited  {color: #C00;}
+/* Dark Gray text with white bg */
+.icH{color: #333;}
+#cn-centre-col-inner .icH a:link, 
+#cn-centre-col-inner .icH a:visited, 
+#cn-right-col-inner .icH a:link, 
+#cn-right-col-inner .icH a:visited  {color: #666;}
+/* Dark Blue text with white bg */
+.icE{color: #036;}
+#cn-centre-col-inner .icE a:link, 
+#cn-centre-col-inner .icE a:visited, 
+#cn-right-col-inner .icE a:link, 
+#cn-right-col-inner .icE a:visited  {color: #036;}
+/* IC- Sdebar CLF2 theme, IC Sidebar WET moved to IC_WET_2-3_institution.css - Todo remove for WET3 */
+div.sidebarBTop {
+	float:right;
+	background-color:#ddeeff;
+	border-top:solid 15px #336699;
+	border-right:solid 1px #336699;
+	border-bottom:solid 1px #336699;
+	border-left:solid 1px #336699;
+	margin:0px 0px 10px 10px;
+	padding: 10px;
+}
+div.sidebarBLeft {
+	float:right;
+	background-color:#ddeeff;
+	border-top:solid 1px #336699;
+	border-right:solid 1px #336699;
+	border-bottom:solid 1px #336699;
+	border-left:solid 15px #336699;
+	margin:0px 0px 10px 10px;
+	padding: 10px;
+}
+div.sidebarHTop {
+	float:right;
+	background-color:#eeeeee;
+	border-top:solid 15px #666666;
+	border-right:solid 1px #666666;
+	border-bottom: solid 1px #666666;
+	border-left: solid 1px #666666;
+	margin:0px 0px 10px 10px;
+	padding: 10px;
+}
+div.sidebarHLeft {
+	float:right;
+	background-color:#eeeeee;
+	border-top:solid 1px #666666;
+	border-right:solid 1px #666666;
+	border-bottom: solid 1px #666666;
+	border-left: solid 15px #666666;
+	margin:0px 0px 10px 10px;
+	padding: 10px;
+} 
+/* Bibliography */ 
+ul.bibliography { text-indent: -38px; font-weight: normal; list-style-type: none;} 
+ul.bibliography li {margin-top: 20px; margin-bottom: 20px;}
+/* Alignment */
+/* ICGCWEB-440 - Added !important to existing single-use classes */
+.alignMiddle {vertical-align:middle !important;}
+.alignMiddleRight {text-align: right  !important; vertical-align:middle !important;}
+.alignMiddleCenter {text-align: center !important; vertical-align:middle !important;}
+.alignMiddleLeft {text-align: left !important; vertical-align:middle !important;}
+/* A-Z index IC-CLF2 Theme */
+/* IPPQ-436 - ul.alphaPicklist removed */
+div.alphaBanners h2 {color: #333; background-color: #EEE; border: 1px solid #CCC; font-family: Arial; padding-left: 4px;}
+div.alphaBanners {width: 100%;}
+ul.alphaPicklist {text-align: center; color: #336699; margin-left: 0px; padding-left: 0px; width: 699px; overflow: hidden;}
+ul.alphaPicklist li {float: left; border: 1px solid #CCC; width: 6.6%; list-style-type: none; font-weight: bold; margin: 1px; color: #333; background: #EDF7FD;}
+#cn-centre-col-inner ul.alphaPicklist li.noLink {background-color: #FFF; color: #CCC;}
+ul.alphaPicklist li a {text-decoration: underline; color: #06C; display: block;}
+#cn-centre-col-inner ul.alphaPicklist li a:hover, #cn-centre-col-inner ul.alphaPicklist li a:active, #cn-centre-col-inner ul.alphaPicklist li a:focus {background: #369; color: #FFF;}
+/* Underlines (signature lines, etc) */
+img.ic-line {height: 11px; vertical-align: bottom;}
+/*PDF BOX - IC CLF2 Theme*/
+.pdfBox {float: right; width: 160px; background-color: #DEF;  border:1px solid #BBB; border-radius:5px; -pie-border-radius:5px 5px 5px 5px; margin:5px; padding:5px;}
+.pdfBox p {color: #036; font-size: 8.5pt; text-align: center; margin-bottom: 7px; margin-top: 7px;}
+.pdfBox p img {display: inline !important;}
+/*LONG DESCRIPTION IC-CLF2 Theme*/
+div.longDescBorder { 
+  border: 1px solid black;  
+} 
+div.longDescBorder, div.longDesc { 
+  overflow: hidden; 
+} 
+#cn-centre-col-inner div.longDescBorder div a:link, 
+#cn-centre-col-inner div.longDesc div a:link, 
+#cn-centre-col-inner div.longDescBorder div a:visited, 
+#cn-centre-col-inner div.longDesc div a:visited {
+  color: #FFF;
+}
+div.longDescBorder div, div.longDesc div { 
+  background-color: #036; 
+  color: #FFF; 
+  font-weight: bold; 
+  margin: 0; 
+ padding: 6px 3px 6px 3px;
+} 
+div.longDescBorder a img, div.longDesc a img { 
+  background-color: #FFF; 
+  display: block; 
+  margin: 0 auto; 
+  padding: 0 0 3px 0; 
+} 
+div.longDescBorder a.longDescLink, div.longDesc a.longDescLink { 
+  float: right; 
+  font-size: 80%; 
+  margin: 0; 
+  padding: 0 3px 3px 0; 
+  text-align: right; 
+  width: 49%; 
+} 
+div.longDesc span.source, div.longDescBorder span.source { 
+  float: right; 
+  font-size: 80%; 
+  margin: 0; 
+  padding: 0 0 3px 3px; 
+  width: 49%; 
+  text-align:left; 
+} 
+/*IMAGE TITLE IC-CLF2 Theme*/
+div.imgTitleBorder { 
+  border: 1px solid black; 
+  border-top: none; 
+} 
+div.imgTitleBorder, div.imgTitle { 
+  overflow: hidden;
+  position: relative; 
+} 
+#cn-centre-col-inner div.imgTitleBorder div a:link, 
+#cn-centre-col-inner div.imgTitle div a:link, 
+#cn-centre-col-inner div.imgTitleBorder div a:visited, 
+#cn-centre-col-inner div.imgTitle div a:visited {
+  color: #FFF;
+}
+div.imgTitleBorder div, div.imgTitle div { 
+  background-color: #036; 
+  color: #FFF; 
+  font-weight: bold; 
+  margin: 0; 
+padding: 6px 3px 6px 3px;
+text-align: left;
+} 
+div.imgTitleBorder span.source, div.imgTitle span.source { 
+  font-size: 80%; 
+  bottom: 3px; 
+  left: 3px; 
+} 
+  
+div.imgTitleBorder span.source a, div.imgTitle span.source a { 
+  font-size: 100%; 
+  display: inline; 
+} 
+div.imgTitleBorder p {margin:5px;}
+/* Left-aligned DL. DT and DD on same line */
+dl.contactDefList {margin: 0;}
+dl.contactDefList dt {float: left; font-weight: bold; margin-right: 5px;}
+dl.contactDefList dd {margin: 0;}
+/* Lists */
+ul.noIndent { margin-left: 10px; padding-left: 9px;}
+ol.noIndent { margin-left: 10px; padding-left: 18px;}
+ul.noBullet {list-style-type: none;}
+/* ICGCWEB-476 - Overwrite li WET styles in sublists */
+ul.noBulletnoIndent, ol.noBulletnoIndent, ul.noBulletnoIndent > li, ol.noBulletnoIndent > li {list-style-type: none !important; margin-left: 0px !important; padding-left: 0px !important;}
+ul.space > li, ol.space > li {margin-top: 20px; margin-bottom: 20px;}
+ul.halfSpace > li, ol.halfSpace > li {margin-top: 8px; margin-bottom: 8px;}
+dl.space > dd {margin-bottom: 20px; } 
+dl.halfSpace > dd {margin-bottom: 8px;} 
+dl.noSpace, ol.noSpace, ul.noSpace {margin-bottom: 0; margin-top: 0;}
+/* DPRs and RPP - NOTE: Treasury Board reporting classes */
+table.rpp th, table.dpr th { background-color: #eee; font-weight: bold; } 
+.borderLeftThin { border-left: solid 1px #000 !important; } 
+.borderRightThin { border-right: solid 1px #000 !important; } 
+.borderTopThin { border-top: solid 1px #000 !important; } 
+.borderTopThick { border-top: solid 2px #000 !important; } 
+.borderTopDouble { border-top: double 3px #000 !important; } 
+.borderBottomThin { border-Bottom: solid 1px #000 !important; } 
+.borderBottomThick { border-Bottom: solid 2px #000 !important; } 
+.borderBottomDouble { border-Bottom: double 3px #000 !important; } 
+.borderSimple { border: solid 1px #000 !important; } 
+.width33 { width: 33%; } 
+.width34 { width: 34%; } 
+.darkgreyBG { background-color: #666; color: #fff; } 
+/* IC right-nav announcement box */
+.outages {background-color: #FFC; border: 2px solid #CCC;}
+.outages p {color: #000; margin-top: 0;}
+/* ADD App error message (EPI-6341) */
+.errorMessageSpan{
+  border: 1px solid #F00;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;  
+  margin-top: 2px;
+  margin-bottom:3px;
+  padding:3px;
+  background-color: #FFE7E7;
+  color: #000000;  
+  background-image: url(/eic/home.nsf/images/add_exclamation.gif/$file/add_exclamation.gif);
+  background-repeat:no-repeat;
+  background-position: 1px 3px;
+  padding-left: 21px;
+  font-weight:bold;
+  width:95.5%;
+  display:block;
+}
+/* ADD inline ordered list (EPI-6413) */
+ol.noStyleList {margin: 0; padding: 0; list-style-type: none;}
+ol.noStyleList li {display: inline;}
+/* Fixes for grid addition */
+figure {margin: 12px 0;} /* Graphs */
+form.eicForm td {border: 0;} /* EPIC forms */
+a.cn-linkdesc {z-index:0;} /* Slideout tab */
+/* EPI-8685 - Alternative to EPI-8656: Content overlapped tooltip */
+*:first-child+html .slideoutWrapperRel {z-index: 999\9;} /* IE8 and below */
+/* IC-ADD utility icons (EPI-7133, IPPOTH-1258) */
+.no-js .js-ic-dismissible {display: block;}
+.js-ic-dismissible {display: none; position: relative;}
+.ic-close {cursor: pointer; margin:0; padding:0; background: url(/eic/home.nsf/images/actions-circle-delete-2-DG.png/$file/actions-circle-delete-2-DG.png); border: none; position: absolute; top: 3px; right: 3px; height: 16px; width: 16px;}
+.ic-close:hover {background: url(/eic/home.nsf/images/actions-circle-delete-2-LB.png/$file/actions-circle-delete-2-LB.png);}
+/* ICGCWEB-353, EPI-10320 */
+div.ic_success { border: 1px solid #BDA; background: #F3FFF3 url(/eic/home.nsf/images/ic_WET_2-3_success.png/$file/ic_WET_2-3_success.png) no-repeat 2px 3px; color: #000; margin-top: 2px; margin-bottom:3px; padding: 3px 20px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+div.ic_error { border: 1px solid #FBB; background: #FEE url(/eic/home.nsf/images/ic_WET_2-3_error.png/$file/ic_WET_2-3_error.png) no-repeat 2px 3px; color: #000; margin-top: 2px; margin-bottom: 3px; padding: 3px 20px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -pie-poll: true;}
+div.ic_warning { border: 1px solid #FD7; background: #FFD url(/eic/home.nsf/images/ic_WET_2-3_warning.png/$file/ic_WET_2-3_warning.png) no-repeat 2px 3px; color: #000; margin-top: 2px; margin-bottom: 3px; padding: 3px 20px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; position: relative; -pie-poll:true; }
+div.ic_info { border: 1px solid #ADF; background: url('/eic/home.nsf/images/ic_WET_2-3_info.png/$file/ic_WET_2-3_info.png') no-repeat scroll 5px 10px #EDF7FD; color: #000; margin-top: 3px; margin-bottom: 3px; padding: 10px 25px 5px 25px; border-radius: 5px; } 
+div.ic_success p:first-child, div.ic_error p:first-child, div.ic_warning p:first-child, div.ic_info p:first-child {margin-top: 0;}
+/* Fix issue with WET's newwindow and IPP's bibliography */
+ul.bibliography .cn-linkdesc span span {text-indent: 0;} 
+#cn-cols ul.bibliography a.cn-external2 {text-indent: 0;}
+/* IPP Sidebars inside grids WET*/
+/* 1-col, grey top sidebar */
+.span-12 .span-1 div.sidebarHTop,
+.span-12 .span-2 div.sidebarHTop,
+.span-12 .span-3 div.sidebarHTop,
+.span-12 .span-4 div.sidebarHTop,
+.span-12 .span-5 div.sidebarHTop,
+.span-12 .span-6 div.sidebarHTop,
+.span-12 .span-7 div.sidebarHTop,
+.span-12 .span-8 div.sidebarHTop,
+.span-12 .span-9 div.sidebarHTop,
+.span-12 .span-10 div.sidebarHTop,
+.span-12 .span-11 div.sidebarHTop,
+.span-12 .span-12 div.sidebarHTop,
+/* 1-col, blue top sidebar */
+.span-12 .span-1 div.sidebarBTop,
+.span-12 .span-2 div.sidebarBTop,
+.span-12 .span-3 div.sidebarBTop,
+.span-12 .span-4 div.sidebarBTop,
+.span-12 .span-5 div.sidebarBTop,
+.span-12 .span-6 div.sidebarBTop,
+.span-12 .span-7 div.sidebarBTop,
+.span-12 .span-8 div.sidebarBTop,
+.span-12 .span-9 div.sidebarBTop,
+.span-12 .span-10 div.sidebarBTop,
+.span-12 .span-11 div.sidebarBTop,
+.span-12 .span-12 div.sidebarBTop,
+/* 1-col, blue left sidebar */
+.span-12 .span-1 div.sidebarBLeft,
+.span-12 .span-2 div.sidebarBLeft,
+.span-12 .span-3 div.sidebarBLeft,
+.span-12 .span-4 div.sidebarBLeft,
+.span-12 .span-5 div.sidebarBLeft,
+.span-12 .span-6 div.sidebarBLeft,
+.span-12 .span-7 div.sidebarBLeft,
+.span-12 .span-8 div.sidebarBLeft,
+.span-12 .span-9 div.sidebarBLeft,
+.span-12 .span-10 div.sidebarBLeft,
+.span-12 .span-11 div.sidebarBLeft,
+.span-12 .span-12 div.sidebarBLeft,
+/* 1-col, grey left sidebar */
+.span-12 .span-1 div.sidebarHLeft,
+.span-12 .span-2 div.sidebarHLeft,
+.span-12 .span-3 div.sidebarHLeft,
+.span-12 .span-4 div.sidebarHLeft,
+.span-12 .span-5 div.sidebarHLeft,
+.span-12 .span-6 div.sidebarHLeft,
+.span-12 .span-7 div.sidebarHLeft,
+.span-12 .span-8 div.sidebarHLeft,
+.span-12 .span-9 div.sidebarHLeft,
+.span-12 .span-10 div.sidebarHLeft,
+.span-12 .span-11 div.sidebarHLeft,
+.span-12 .span-12 div.sidebarHLeft,
+/* 2-cols, grey top sidebar */
+.span-6 .span-1 div.sidebarHTop,
+.span-6 .span-2 div.sidebarHTop,
+.span-6 .span-3 div.sidebarHTop,
+.span-6 .span-4 div.sidebarHTop,
+.span-6 .span-5 div.sidebarHTop,
+.span-6 .span-6 div.sidebarHTop,
+/* 2-cols, blue top sidebar */
+.span-6 .span-1 div.sidebarBTop,
+.span-6 .span-2 div.sidebarBTop,
+.span-6 .span-3 div.sidebarBTop,
+.span-6 .span-4 div.sidebarBTop,
+.span-6 .span-5 div.sidebarBTop,
+.span-6 .span-6 div.sidebarBTop,
+/* 2-cols, blue left sidebar */
+.span-6 .span-1 div.sidebarBLeft,
+.span-6 .span-2 div.sidebarBLeft,
+.span-6 .span-3 div.sidebarBLeft,
+.span-6 .span-4 div.sidebarBLeft,
+.span-6 .span-5 div.sidebarBLeft,
+.span-6 .span-6 div.sidebarBLeft,
+/* 2-cols, grey left sidebar */
+.span-6 .span-1 div.sidebarHLeft,
+.span-6 .span-2 div.sidebarHLeft,
+.span-6 .span-3 div.sidebarHLeft,
+.span-6 .span-4 div.sidebarHLeft,
+.span-6 .span-5 div.sidebarHLeft,
+.span-6 .span-6 div.sidebarHLeft
+{float: none; margin-left: 0;}
+/*IC SLIDE SHOW BEGINS*/
+/* Need to send mailout that it's being deprecated */
+div#ic_slideshow {
+ background-color: #EEEEEE;
+ border: 1px solid #CCCCCC;
+ position: relative;
+ padding-bottom: 8px;
+}
+div#ic_slideshow div.slide {
+ display: none;
+ padding: 1px;
+ border-bottom: none;
+ text-align: center;
+ width: 596px;
+}
+div#cn-body-inner-3col div#ic_slideshow  div.slide{
+  width: 388px;
+}
+div#ic_slideshow ul#controls {
+ margin-top: 6px;
+ position: absolute;
+ right: 3px;
+ top: 0;
+ z-index: 1; 
+}
+div#ic_slideshow ul#controls li {
+ display: inline;
+ float: left;
+ margin-right: 5px;
+ border: 1px solid #999;
+}
+div#ic_slideshow ul#controls li a {
+ background-color: #DDDDDD;
+ color: #003366;
+ padding: 0 5px; 
+ text-decoration: none;
+}
+div#ic_slideshow ul#controls li a img {
+  float: left;
+}
+div#ic_slideshow ul#controls li a#pause {
+ background-color: transparent;
+ padding: 0;
+}
+div#ic_slideshow ul#controls li a:hover, div#ic_slideshow ul#controls li a.active {
+ background-color: #003366;
+ color: #FFFFFF;
+ padding: 0 5px;
+}
+div#ic_slideshow div.active {
+ display: block;
+}
+div#ic_slideshow div.slide div.ssContent {
+ margin: 4px 0 4px 0 !important; 
+ margin: 4px 0; /* This is read by IE6 only */
+ padding: 0 2px;
+ width: 99%;
+ background-color: #EEEEEE;
+ text-align: left;
+}
+div#ic_slideshow div.slide div.ssContent div.ssTitle, div#ic_slideshow div.slide div.ssContent div.ssText {
+ margin-left: 2px;
+ background-color: #EEEEEE;
+}
+div#ic_slideshow div.slide div.ssTitle a {
+ color: #003366;
+ font-family: Verdana;
+ font-weight: bold;
+}
+ div#ic_slideshow div.slide div.ssText {
+ font-family: Verdana;
+ font-size: 95%;
+ background-color: #EEEEEE;
+}
+div#ic_slideshow div.slide div a {
+ background-color: #EEEEEE;
+}
+div.htmlVersion {
+ font-family: Verdana;
+ color: #000;
+ text-align: right;
+ background-color: #EEEEEE;
+ font-size: 85%;
+ position: absolute;
+ bottom: 4px;
+ right: 2px;
+}
+/*IC SLIDE SHOW ENDS*/
+/*ADD required change to _WET_2-3_grid_util.css - EPI-7899*/
+input[type="submit"], input[type="reset"], input[type="button"] { margin-top:0; }
+/*ADD required - Disabled button style  EPI-7922*/
+input[disabled], input[disabled]:hover, input[disabled]:active, input[disabled]:focus {background-color: #EFEFEF !important; background-image: none !important; border-color: #FFFFFF; border-radius: 2px 2px 2px 2px; border-style: solid; border-width: 1px; box-shadow: none !important; color: grey; font-weight: 400; margin-top: 0; min-height: 24px; padding: 2px 6px; text-shadow: 0 1px 0 #EEEEEE;}
+/* EPI-9674 - Page break on print */
+.page-break { display:none; }
+@media print {
+  #icitBar {display: none;}
+  .page-break { display:block; page-break-before:always; }
+}
+/* EPI-8397 - Disable 'current menu' indicator */
+#cn-psnb .mb-menu .nav-current {background: none transparent;}
+/*EPI-8634 use of social media icons and logos */
+.icitBoxContent p { margin:0 -6px 0 -6px; font-size: 90%; color:#666;} 
+/* EPI-8653 Page ID */
+#cn-sft {padding-bottom: 0px;}
+#cn-sft-inner {padding-bottom: 0px;}
+#cn-sft-inner div.span-2 {padding-bottom: 20px;}
+#cn-sft .page-id {float:right; font-size: 85% !important; color: #666; margin: 0 10px 5px 10px; width: 140px; text-align: right;}
+/* Alignment utility CSS */
+/* ICGCWEB-440 - Do not add !important since we want the element-agnostic equivalents to overwrite these */
+thead.alignRight th, thead.alignRight td, tbody.alignRight th, tbody.alignRight td {text-align: right;}
+thead.alignCenter th, thead.alignCenter td, tbody.alignCenter th, tbody.alignCenter td {text-align: center;}
+thead.alignLeft th, thead.alignLeft td, tbody.alignLeft th, tbody.alignLeft td {text-align: left;}
+thead.alignTop th, thead.alignTop td, tbody.alignTop th, tbody.alignTop td {text-align: top;}
+thead.alignBottom th, thead.alignBottom td, tbody.alignBottom th, tbody.alignBottom td {vertical-align: bottom;}
+thead.alignTopRight th, thead.alignTopRight td, tbody.alignTopRight th, tbody.alignTopRight td {text-align: right; vertical-align: top;}
+thead.alignTopCenter th, thead.alignTopCenter td, tbody.alignTopCenter th , tbody.alignTopCenter td {text-align: center; vertical-align: top;}
+thead.alignTopLeft th, thead.alignTopLeft td, tbody.alignTopLeft th , tbody.alignTopLeft td {text-align: left; vertical-align: top;}
+thead.alignBottomRight th, thead.alignBottomRight td, tbody.alignBottomRight th, tbody.alignBottomRight td {text-align: right; vertical-align: bottom;}
+thead.alignBottomCenter th, thead.alignBottomCenter td, tbody.alignBottomCenter th , tbody.alignBottomCenter td {text-align: center; vertical-align: bottom;}
+thead.alignBottomLeft th, thead.alignBottomLeft td, tbody.alignBottomLeft th, tbody.alignBottomLeft td {text-align: left; vertical-align: bottom;}
+/* EPI-9958 - Normalize left/right spacing around checkboxes and radio buttons */
+[type="checkbox"], [type="radio"] {padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 5px; box-shadow: none !important;}
+/* Print button - EPI-9630 */
+.eic-print {display: none;} /* Shown via JS */
+.eic-print--link {border: none; background: url(/eic/home.nsf/images/ic_WET_2-3_smt_print-bw.gif/$file/ic_WET_2-3_smt_print-bw.gif) no-repeat left center; color: #295376; cursor: pointer; padding: 0 0 0 17px; text-decoration: underline;}
+.eic-print--link:hover {color: #CC0000;}
+@media print {
+  .eic-print {display: none;}
+}
+/* EPI-9986 - Add a way to remove link icons */
+.wb-icon-none {
+    background-image: none !important;
+    padding-left: 0 !important;
+}
+#EmailContainer input {display: block;}

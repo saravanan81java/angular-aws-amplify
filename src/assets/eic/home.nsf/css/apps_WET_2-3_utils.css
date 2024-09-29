@@ -1,0 +1,7 @@
+/* EPI-8222 */
+.ui-datepicker-calendar a[href]:hover, .ui-datepicker-calendar a[href]:focus, .ui-datepicker-calendar a[href]:active {color: #FFF; background: url("/eic/home.nsf/images/_WET_2-3_ui-bg_glass_25_252525_1x400.png/$file/_WET_2-3_ui-bg_glass_25_252525_1x400.png") repeat-x scroll 50% 50% #E6E6E6}
+/* EPI-8266, POIMAP-130 */
+.ui-widget-overlay {z-index: 10003 !important;}
+.ui-dialog {z-index: 10004 !important;}
+/* EPI-7934, EPI-8325 */
+div.profileInfo {background-color: #EDF7FD; background: url("/eic/home.nsf/images/ic_1col-bb.jpg/$file/ic_1col-bb.jpg") no-repeat scroll right bottom #EDF7FD; border: medium none; display: block; font-size: 100%; height: 18px; margin: 0 1px 8px; min-height: 0 !important; padding: 0.25em; text-align: right; width: 99.1%;}

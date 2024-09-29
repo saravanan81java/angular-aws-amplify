@@ -1,0 +1,198 @@
+.text-left {
+	text-align: left !important
+}
+.text-right {
+	text-align: right !important
+}
+.text-center {
+	text-align: center !important
+}
+.center-block {
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important
+}
+/* Added this in for tables because it work in WET 4 */
+table.center-block {
+    display: table	
+}
+.text-nowrap {
+	white-space: nowrap
+}
+.nowrap {
+	white-space: nowrap
+}
+.text-lowercase {
+	text-transform: lowercase
+}
+.text-uppercase {
+	text-transform: uppercase
+}
+.list-inline, .list-unstyled {
+	padding-left: 0;
+	list-style: none
+}
+.pull-right {
+	float: right!important
+}
+.pull-left {
+	float: left!important
+}
+.clearfix:after, .clearfix:before {
+	content: " ";
+	display: table
+}
+.clearfix:after {
+	clear: both
+}
+.opct-100 {
+	opacity: 1
+}
+.opct-90 {
+	opacity: .9
+}
+.opct-80 {
+	opacity: .8
+}
+.opct-70 {
+	opacity: .7
+}
+.opct-60 {
+	opacity: .6
+}
+.opct-50 {
+	opacity: .5
+}
+.opct-40 {
+	opacity: .4
+}
+.opct-30 {
+	opacity: .3
+}
+.opct-20 {
+	opacity: .2
+}
+.opct-10 {
+	opacity: .1
+}
+.lst-lwr-alph {
+	list-style-type: lower-alpha
+}
+.lst-lwr-alph > li {
+	list-style-type: lower-alpha
+}
+.lst-upr-alph {
+	list-style-type: upper-alpha
+}
+.lst-upr-alph > li {
+	list-style-type: upper-alpha
+}
+.lst-lwr-rmn {
+	list-style-type: lower-roman
+}
+.lst-lwr-rmn > li {
+	list-style-type: lower-roman
+}
+.lst-upr-rmn {
+	list-style-type: upper-roman
+}
+.lst-upr-rmn > li {
+	list-style-type: upper-roman
+}
+.hide {
+	display: none!important
+}
+/* Added margin-top, WET 4 does it on the tag */
+.lst-spcd > li {
+	margin-bottom: 10px;
+	margin-top: 10px
+}
+/* WET 4 does not have this class available for dl's because they have their own spacing. I added this for now it will be ignored in WET 4 and I don't want to apply it to the dl tag in WET 2.3. */
+.lst-spcd > dd {
+	margin-bottom: 10px
+}
+.lst-spcd ol, .lst-spcd ul .lst-spcd dl {
+	margin-top: 10px
+}
+/* Added the margin because WET 4 does this on the ul and ol tags themselves */
+.list-inline, .list-unstyled {
+	padding-left: 0;
+	list-style: none;
+	margin: 0px 0px 11.5px 0px !important;
+}
+.list-inline {
+	margin-left: -5px
+}
+.list-inline > li {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px
+}
+/* Added important becuase in WET 4 they are in proper order */
+.mrgn-lft-0 {
+	margin-left: 0 !important
+}
+.mrgn-lft-sm {
+	margin-left: 5px !important
+}
+.mrgn-lft-md {
+	margin-left: 15px !important
+}
+.mrgn-lft-lg {
+	margin-left: 30px !important
+}
+.mrgn-lft-xl {
+	margin-left: 50px !important
+}
+.mrgn-bttm-0 {
+	margin-bottom: 0 !important
+}
+.mrgn-bttm-sm {
+	margin-bottom: 5px !important
+}
+.mrgn-bttm-md {
+	margin-bottom: 15px !important
+}
+.mrgn-bttm-lg {
+	margin-bottom: 30px !important
+}
+.mrgn-bttm-xl {
+	margin-bottom: 50px !important
+}
+.mrgn-tp-0 {
+	margin-top: 0 !important
+}
+.mrgn-tp-sm {
+	margin-top: 5px !important
+}
+.mrgn-tp-md {
+	margin-top: 15px !important
+}
+.mrgn-tp-lg {
+	margin-top: 30px !important
+}
+.mrgn-tp-xl {
+	margin-top: 50px !important
+}
+.mrgn-rght-0 {
+	margin-right: 0 !important
+}
+.mrgn-rght-sm {
+	margin-right: 5px !important
+}
+.mrgn-rght-md {
+	margin-right: 15px !important
+}
+.mrgn-rght-lg {
+	margin-right: 30px !important
+}
+.mrgn-rght-xl {
+	margin-right: 50px !important
+}
+
+/* Added to make pulls full width on print like WET 4 */
+@media print {
+  .pull-right, .pull-left {float: none !important; width:100%;}
+/* EPI-10451 - Floating images should not be 100% wide */
+  img.pull-right, img.pull-left {width: auto;}
+}
